@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Result</title>
+</head>
+<body>
+    <h1>Analysis Result</h1>
+    <p><strong>Text:</strong> {{ text }}</p>
+    <p><strong>Sentiment:</strong> {{ sentiment.label }} (Confidence: {{ sentiment.score }})</p>
+
+    <h2>Sentiment Distribution</h2>
+    <img src="{{ plot_url }}" alt="Sentiment Distribution">
+
+    <a href="/">Analyze another text</a>
+</body>
+</html>
