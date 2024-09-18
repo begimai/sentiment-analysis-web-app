@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk Sentiment Analysis Result</title>
+</head>
+<body>
+    <h1>Bulk Sentiment Analysis Result</h1>
+    <ul>
+    {% for result in results %}
+        <li>{{ result.text }}: {{ result.sentiment }}</li>
+    {% endfor %}
+    </ul>
+
+    <h2>Sentiment Distribution</h2>
+    <img src="{{ plot_url }}" alt="Sentiment Distribution">
+
+    <a href="/">Analyze more texts</a>
+</body>
+</html>
