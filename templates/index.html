@@ -1,30 +1,16 @@
+<!-- templates/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sentiment Analysis</title>
+    <title>Emotion Analysis</title>
 </head>
 <body>
-    <h1>Sentiment Analysis</h1>
-
-    <!-- Form for Single Sentiment Analysis -->
-    <h2>Analyze Single Text</h2>
-    <form action="/analyze" method="POST">
-        <label for="text">Enter text for sentiment analysis:</label><br>
-        <textarea name="text" rows="4" cols="50" placeholder="Enter a single text..."></textarea><br>
-        <button type="submit">Analyze</button>
+    <h1>Bulk Emotion Analysis</h1>
+    <form action="/analyze_bulk" method="post">
+        <textarea name="texts" rows="5" cols="50" placeholder="Enter multiple texts here..."></textarea><br><br>
+        <input type="submit" value="Analyze Emotions">
     </form>
-
-    <hr>
-
-    <!-- Form for Bulk Sentiment Analysis -->
-    <h2>Analyze Multiple Texts</h2>
-    <form action="/analyze_bulk" method="POST">
-        <label for="texts">Enter texts for bulk analysis (one per line):</label><br>
-        <textarea name="texts" rows="8" cols="50" placeholder="Enter multiple texts, one per line..."></textarea><br>
-        <button type="submit">Analyze Bulk</button>
-    </form>
-
 </body>
 </html>

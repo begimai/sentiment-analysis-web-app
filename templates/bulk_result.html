@@ -1,21 +1,20 @@
+<!-- bulk_result.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bulk Sentiment Analysis Result</title>
+    <title>Bulk Emotion Analysis</title>
 </head>
 <body>
-    <h1>Bulk Sentiment Analysis Result</h1>
+    <h1>Emotion Analysis Results</h1>
+
     <ul>
-    {% for result in results %}
-        <li>{{ result.text }}: {{ result.sentiment }}</li>
-    {% endfor %}
+        {% for text, emotion in zipped_data %}
+            <li><strong>Text:</strong> {{ text }} | <strong>Emotion:</strong> {{ emotion }}</li>
+        {% endfor %}
     </ul>
 
-    <h2>Sentiment Distribution</h2>
-    <img src="{{ plot_url }}" alt="Sentiment Distribution">
+    <h2>Emotion Plot Over Conversation</h2>
+    <img src="{{ plot_url }}" alt="Emotion Over Conversation">
 
-    <a href="/">Analyze more texts</a>
 </body>
 </html>

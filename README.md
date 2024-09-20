@@ -1,22 +1,24 @@
-# Sentiment Analysis Web App
+## Sentiment and Emotion Analysis Web App
+This web application analyzes emotions in conversational text using a pre-trained emotion classification model. Built with Flask and the Transformers library, the app allows users to input multiple lines of text and visualize the emotional responses throughout the conversation.
 
-## Overview
-This is a web application built with Flask for sentiment analysis of text data. It uses a Hugging Face sentiment analysis model to analyze both single and bulk texts. Results are visualized using Matplotlib.
 
 ## Features
-- Analyze sentiment of individual texts
-- Analyze sentiment of multiple texts (bulk analysis)
-- Visualization of sentiment distribution
+- **Emotion Prediction**: Classifies emotions from user-provided text based on the GoEmotions dataset.
+- **Bulk Analysis**: Allows analysis of multiple lines of text simultaneously.
+- **Visualization**: Displays a plot of emotions over the course of the conversation.
+- **User-Friendly Interface**: Simple and intuitive web interface for input and results.
+
 
 ## Getting Started
 
 ### Prerequisites
-- Python 3.x
+- Python
 - Flask
-- Transformers (Hugging Face)
+- PyTorch
+- Transformers
 - Matplotlib
-- Seaborn
 - Pandas
+- HTML/CSS
 
 ### Installation
 1. Clone the repository:
